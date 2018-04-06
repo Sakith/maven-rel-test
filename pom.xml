@@ -3,7 +3,7 @@
 
 	<groupId>maven-rel-test</groupId>
 	<artifactId>maven-rel</artifactId>
-	<version>0.0.4</version>
+	<version>0.0.5-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>maven-rel</name>
@@ -23,7 +23,7 @@
 		<connection>https://github.com/Sakith/maven-rel-test.git</connection>
 		<developerConnection>scm:git:[fetch=]https://github.com/Sakith/maven-rel-test.git[push=]https://github.com/Sakith/maven-rel-test.git</developerConnection>
 		<url>https://github.com/Sakith/maven-rel-test.git</url>
-		<tag>maven-rel-0.0.4</tag>
+		<tag>@{version}</tag>
 	</scm>
 
 
