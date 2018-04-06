@@ -1,9 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>maven-rel-test</groupId>
 	<artifactId>maven-rel</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>maven-rel</name>
@@ -23,23 +24,33 @@
 	</dependencies>
 
 	<scm>
-		<connection>https://github.com/Sakith/maven-relese-plugin.git</connection>
-		<developerConnection>scm:git:[fetch=]https://github.com/Sakith/maven-relese-plugin.git[push=]https://github.com/Sakith/maven-relese-plugin.git</developerConnection>
-		<url>https://github.com/Sakith/maven-relese-plugin.git</url>
-	  <tag>maven-rel-0.0.2</tag>
-  </scm>
+		<connection>https://github.com/Sakith/maven-rel-test.git</connection>
+		<developerConnection>scm:git:[fetch=]https://github.com/Sakith/maven-rel-test.git[push=]https://github.com/Sakith/maven-rel-test.git</developerConnection>
+		<url>https://github.com/Sakith/maven-rel-test.git</url>
+	</scm>
 
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>default</id>
+						<goals>
+							<goal>perform</goal>
+						</goals>
+						<configuration>
+							<pomFileName>pom.xml</pomFileName>
+						</configuration>
+					</execution>
+				</executions>
 				<configuration>
 					<checkModificationExcludes>
 						<checkModificationExclude>pom.xml</checkModificationExclude>
 					</checkModificationExcludes>
 				</configuration>
-				<version>2.5.3</version>
+				<version>2.5</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -69,5 +80,5 @@
 		</pluginManagement>
 	</build>
 
-	
+
 </project>
