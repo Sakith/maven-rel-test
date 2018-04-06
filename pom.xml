@@ -3,7 +3,7 @@
 
 	<groupId>maven-rel-test</groupId>
 	<artifactId>maven-rel</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-RC1</version>
 	<packaging>jar</packaging>
 
 	<name>maven-rel</name>
@@ -26,8 +26,8 @@
 		<connection>https://github.com/Sakith/maven-rel-test.git</connection>
 		<developerConnection>scm:git:[fetch=]https://github.com/Sakith/maven-rel-test.git[push=]https://github.com/Sakith/maven-rel-test.git</developerConnection>
 		<url>https://github.com/Sakith/maven-rel-test.git</url>
-	  <tag>HEAD</tag>
-  </scm>
+		<tag>maven-rel-0.0.4-RC1</tag>
+	</scm>
 
 	<build>
 		<plugins>
@@ -79,6 +79,19 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>central</id>
+			<name>syscobt-releases</name>
+			<url>https://syscobt.jfrog.io/syscobt/mvn-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>syscobt-snapshots</name>
+			<url>https://syscobt.jfrog.io/syscobt/mvn-local</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 
 </project>
