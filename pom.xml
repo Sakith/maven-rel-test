@@ -3,7 +3,7 @@
 
 	<groupId>maven-rel-test</groupId>
 	<artifactId>maven-rel</artifactId>
-	<version>0.0.5-SNAPSHOT</version>
+	<version>0.0.5</version>
 	<packaging>jar</packaging>
 
 	<name>maven-rel</name>
@@ -17,13 +17,14 @@
         <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
         <project.resources.sourceEncoding>${encoding}</project.resources.sourceEncoding>
         <archetype.encoding>${encoding}</archetype.encoding>
+        <project.scm.id>git-repository</project.scm.id>
     </properties>
 
 	<scm>
 		<connection>https://github.com/Sakith/maven-rel-test.git</connection>
 		<developerConnection>scm:git:[fetch=]https://github.com/Sakith/maven-rel-test.git[push=]https://github.com/Sakith/maven-rel-test.git</developerConnection>
 		<url>https://github.com/Sakith/maven-rel-test.git</url>
-		<tag>@{version}</tag>
+		<tag>maven-rel-0.0.5</tag>
 	</scm>
 
     <distributionManagement>
