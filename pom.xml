@@ -26,6 +26,14 @@
 		<tag>@{version}</tag>
 	</scm>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Sysco-snapshots</name>
+            <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+            <layout>default</layout>
+        </snapshotRepository>
+    </distributionManagement>
 
 	<dependencies>
 		<dependency>
@@ -85,6 +93,8 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	
+
 
 
 </project>
