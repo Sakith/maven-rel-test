@@ -3,7 +3,7 @@
 
 	<groupId>maven-rel-test</groupId>
 	<artifactId>maven-rel</artifactId>
-	<version>0.0.5</version>
+	<version>0.0.6-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>maven-rel</name>
