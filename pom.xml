@@ -31,12 +31,12 @@
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>sakithsyscolabstest-snapshots</name>
-			<url>https://sakithsyscolabstest.jfrog.io/sakithsyscolabstest/libs-snapshot</url>
+			<url>https://sakithsyscolabstest.jfrog.io/sakithsyscolabstest/libs-snapshot-local</url>
 		</snapshotRepository>
 		<repository>
 			<id>central</id>
 			<name>sakithsyscolabstest-releases</name>
-			<url>https://sakithsyscolabstest.jfrog.io/sakithsyscolabstest/libs-release</url>
+			<url>https://sakithsyscolabstest.jfrog.io/sakithsyscolabstest/libs-release-local</url>
 		</repository>
     </distributionManagement>
 
