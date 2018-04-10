@@ -24,19 +24,19 @@
 		<connection>https://github.com/Sakith/maven-rel-test.git</connection>
 		<developerConnection>scm:git:[fetch=]https://github.com/Sakith/maven-rel-test.git[push=]https://github.com/Sakith/maven-rel-test.git</developerConnection>
 		<url>https://github.com/Sakith/maven-rel-test.git</url>
-		<tag>${version}</tag>
+		<tag>${project.version}</tag>
 	</scm>
 
     <distributionManagement>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>sakithsyscolabstest-snapshots</name>
-			<url>https://sakithsyscolabstest.jfrog.io/sakithsyscolabstest/libs-snapshot-local</url>
+			<url>https://sakithsyscolabstest.jfrog.io/sakithsyscolabstest/libs-snapshot</url>
 		</snapshotRepository>
 		<repository>
 			<id>central</id>
 			<name>sakithsyscolabstest-releases</name>
-			<url>https://sakithsyscolabstest.jfrog.io/sakithsyscolabstest/libs-release-local</url>
+			<url>https://sakithsyscolabstest.jfrog.io/sakithsyscolabstest/libs-release</url>
 		</repository>
     </distributionManagement>
 

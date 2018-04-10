@@ -4,14 +4,14 @@
   <servers>
     <server>
       <username>admin</username>
-      <password>AP3g1Mn2AaBPmBtgS2LL1cgrAjT</password>
+      <password>AP5ULQ2a3RNBc62cQNQqgNqcCZT</password>
       <id>central</id>
     </server>
     <server>
       <username>admin</username>
-      <password>AP3g1Mn2AaBPmBtgS2LL1cgrAjT</password>
+      <password>AP5ULQ2a3RNBc62cQNQqgNqcCZT</password>
       <id>snapshots</id>
-    </server
+    </server>
     <server>
          <id>git-repository</id>  
          <username>Sakith</username>  
