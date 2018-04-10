@@ -28,17 +28,16 @@
 	</scm>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>Sysco-snapshots</name>
-            <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
-            <layout>default</layout>
-        </snapshotRepository>
-        <repository>
-            <id>central</id>
-            <name>Sysco-releases</name>
-            <url>http://localhost:8081/artifactory/libs-release</url>
-        </repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>sakithsyscolabstest-snapshots</name>
+			<url>https://sakithsyscolabstest.jfrog.io/sakithsyscolabstest/libs-snapshot-local</url>
+		</snapshotRepository>
+		<repository>
+			<id>central</id>
+			<name>sakithsyscolabstest-releases</name>
+			<url>https://sakithsyscolabstest.jfrog.io/sakithsyscolabstest/libs-release-local</url>
+		</repository>
     </distributionManagement>
 
 	<dependencies>
@@ -99,8 +98,5 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	
-
-
 
 </project>
