@@ -76,11 +76,6 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-scm-plugin</artifactId>
 				<version>1.9.5</version>
-				<configuration>
-					<username>Sakith</username>
-					<password>F6LJeyCD90</password>
-					<goals>install</goals>
-				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
