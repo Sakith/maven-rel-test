@@ -3,19 +3,19 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <servers>
     <server>
-      <username>admin</username>
-      <password>AP5ULQ2a3RNBc62cQNQqgNqcCZT</password>
+      <username>{JFROG_USERNAME}</username>
+      <password>{JFROG_KEY}</password>
       <id>central</id>
     </server>
     <server>
-      <username>admin</username>
-      <password>AP5ULQ2a3RNBc62cQNQqgNqcCZT</password>
+      <username>{JFROG_USERNAME}</username>
+      <password>{JFROG_KEY}</password>
       <id>snapshots</id>
     </server>
     <server>
          <id>git-repository</id>
-         <username>Sakith</username>
-         <password>F6LJeyCD90</password>
+         <username>{REPOSITORY_USER_NAME}</username>
+         <password>{REPOSITORY_PASSWORD}</password>
       </server>
   </servers>
   <profiles>
