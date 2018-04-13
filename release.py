@@ -24,7 +24,7 @@ run_version = getText(itemlist.childNodes)
 print(getText(itemlist.childNodes))
 
 #test
-os.environ["deploy_stage"] = "qa"
+# os.environ["deploy_stage"] = "qa"
 
 release_version = run_version.replace("-SNAPSHOT" , "")
 
