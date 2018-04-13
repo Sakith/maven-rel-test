@@ -19,14 +19,9 @@ def prepare_mvn_command(release_version):
 
 pom = parse("pom.xml")
 itemlist = pom.getElementsByTagName("version")[0]
-
+os.system("git remote set-url origin https://{REPOSITORY_USER_NAME}:{REPOSITORY_PASSWORD}@github.com/sakith/maven-rel-test.git")
 run_version = getText(itemlist.childNodes)
 print(getText(itemlist.childNodes))
-
-#test
-# os.environ["deploy_stage"] = "qa"
-
-
 
 print (os.environ["deploy_stage"])
 
@@ -40,11 +35,8 @@ if os.environ["deploy_stage"] == "qa":
     mvn_command = prepare_mvn_command(release_version)
     f= open("version.txt","w+")
     f.write(release_version)
-
-    os.system("git remote set-url origin https://Sakith:F6LJeyCD90@github.com/sakith/maven-rel-test.git")
     os.system("git add -A")
     os.system("git commit -m \"update release version to  "+release_version+" \" ")
-
     os.system(mvn_command)
 
 elif os.environ["deploy_stage"] == "prod":
@@ -55,10 +47,6 @@ elif os.environ["deploy_stage"] == "prod":
     mvn_command = prepare_mvn_command(release_version)
     f= open("version.txt","w+")
     f.write(release_version)
-
-    os.system("git remote set-url origin https://Sakith:F6LJeyCD90@github.com/sakith/maven-rel-test.git")
     os.system("git add -A")
     os.system("git commit -m \"update release version to  "+release_version+" \" ")
-
     os.system(mvn_command)
-
