@@ -12,6 +12,11 @@
       <password>AP5ULQ2a3RNBc62cQNQqgNqcCZT</password>
       <id>snapshots</id>
     </server>
+    <server>
+         <id>git-repository</id>
+         <username>Sakith</username>
+         <password>F6LJeyCD90</password>
+      </server>
   </servers>
   <profiles>
     <profile>

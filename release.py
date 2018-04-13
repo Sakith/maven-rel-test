@@ -14,7 +14,7 @@ def getText(nodelist):
     return ''.join(rc)
 
 def prepare_mvn_command(release_version):
-    command = "mvn --settings settings.xml --batch-mode release:prepare -DreleaseVersion="+ release_version
+    command = "$M2_HOME/mvn --settings settings.xml --batch-mode release:prepare -DreleaseVersion="+ release_version
     return command
 
 pom = parse("pom.xml")
@@ -24,7 +24,7 @@ run_version = getText(itemlist.childNodes)
 print(getText(itemlist.childNodes))
 
 #test
-os.environ["deploy_stage"] = "qa"
+# os.environ["deploy_stage"] = "qa"
 
 
 
