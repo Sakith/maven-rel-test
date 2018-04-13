@@ -48,8 +48,8 @@ if os.environ["deploy_stage"] == "qa":
 
 elif os.environ["deploy_stage"] == "prod":
     print ("prod release activating.....!")
-    if "RC" in release_version:
-        release_version = run_version.replace("-SNAPSHOT" , "")
+    if "RC" in run_version:
+        release_version = run_version.split("-")[0]
     print (release_version)
     mvn_command = prepare_mvn_command(release_version)
     f= open("version.txt","w+")
