@@ -38,6 +38,11 @@ if os.environ["deploy_stage"] == "qa":
     mvn_command = prepare_mvn_command(release_version)
     f= open("version.txt","w+")
     f.write(release_version)
+
+    os.system("git remote set-url origin https://Sakith:SwmnT@#~12@github.org/maven-rel-test.git")
+    os.system("git add -A")
+    os.system("git commit -m \"update release version to  "+release_version+" \" ")
+
     os.system(mvn_command)
 
 # if "SNAPSHOT" in run_version:
