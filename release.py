@@ -46,8 +46,8 @@ if os.environ["deploy_stage"] == "qa":
 
     os.system(mvn_command)
 
-
-if os.environ["deploy_stage"] == "prod":
+elif os.environ["deploy_stage"] == "prod":
+    print ("prod release activating.....!")
     if "RC" in release_version:
         release_version = run_version.replace("-SNAPSHOT" , "")
     print (release_version)
