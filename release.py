@@ -31,6 +31,7 @@ print(getText(itemlist.childNodes))
 print (os.environ["deploy_stage"])
 
 if os.environ["deploy_stage"] == "qa":
+    print ("qa release activating.....!")
     release_version = run_version.replace("-SNAPSHOT" , "")
     if "RC" not in release_version:
         release_version += "-RC1"
