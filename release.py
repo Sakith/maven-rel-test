@@ -14,7 +14,7 @@ def getText(nodelist):
     return ''.join(rc)
 
 def prepare_mvn_command(release_version):
-    command = "mvn --settings settings.xml --batch-mode release:prepare -DreleaseVersion="+ release_version
+    command = "$M2_HOME/mvn --settings settings.xml --batch-mode release:prepare -DreleaseVersion="+ release_version
     return command
 
 pom = parse("pom.xml")
@@ -39,7 +39,7 @@ if os.environ["deploy_stage"] == "qa":
     f= open("version.txt","w+")
     f.write(release_version)
 
-    os.system("git remote set-url origin https://Sakith:SwmnT@#~12@github.org/maven-rel-test.git")
+    os.system("git remote set-url origin https://Sakith:F6LJeyCD90@github.com/sakith/maven-rel-test.git")
     os.system("git add -A")
     os.system("git commit -m \"update release version to  "+release_version+" \" ")
 
